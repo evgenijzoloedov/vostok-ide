@@ -1,0 +1,17 @@
+.wrapper{
+    padding: 30px 4px;
+    display: flex;
+    flex-direction: column;
+height: 100%;
+    width: 100%;
+    max-width: var(--sidebar--width);
+    justify-content: space-between;
+    background: var(--block--bcg);
+}
+
+
+.optionWrapper{
+    display: flex;
+    flex-direction: column;
+    gap:20px
+}

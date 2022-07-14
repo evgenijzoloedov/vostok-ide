@@ -1,0 +1,31 @@
+.wrapper{
+    padding: 12px 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--block--bcg);
+}
+
+.side{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.left{
+    gap: 20px;
+}
+
+.right{
+    gap: 15px;
+}
+
+
+.profileName{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+    color: var(--secondary--text);
+}

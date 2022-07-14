@@ -1,0 +1,25 @@
+.wrapper{
+    padding: 11px 16px;
+    background: var(--secondary);
+}
+.rowWrapper{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.title{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    color: var(--secondary--text);
+}
+
+
+.badgesWrapper{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap:8px
+}

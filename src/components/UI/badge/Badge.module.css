@@ -1,0 +1,32 @@
+.wrapper{
+    background: var(--block--bcg);
+    padding: 3px 10px;
+}
+
+.badge{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    text-align: center;
+}
+
+
+.alert{
+    color: var(--alert);
+}
+
+
+.warning{
+    color: var(--warning);
+}
+.info{
+    color: var(--info);
+}
+.additInfo{
+    color: var(--additional--info);
+}
+
+.text{
+    color: var(--secondary--text);
+}

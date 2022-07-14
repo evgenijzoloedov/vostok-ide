@@ -1,0 +1,28 @@
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    gap:8px;
+    align-items: center;
+    width: 100%;
+    min-width: var(--block--width);
+    max-width: var(--block--width);
+
+}
+
+.container{
+    width: 100%;
+    height:  var(--block--height);
+    max-height: var(--block--height);
+    min-height: var(--block--height);
+    background: var(--secondary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title{
+    width: 100%;
+    color:var(--secondary--text);
+    padding: 0 15px;
+    text-align: left;
+}
