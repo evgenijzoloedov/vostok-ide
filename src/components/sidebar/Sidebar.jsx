@@ -8,12 +8,18 @@ import {RowItem} from "../UI/rowItem";
 const sideBarOptions = [
     {
         title: "Программы",
+
+
         list: [
             {
                 title: "Программа 1",
+                type:"link",
+                to:"/program/1"
             },
             {
                 title: "Программа 2",
+                type:"link",
+                to:"/program/2"
             },
         ]
     },
@@ -22,6 +28,8 @@ const sideBarOptions = [
         list: [
             {
                 title: "Домашнее задание 1",
+                type:"link",
+                to:"/hometask/1"
             },
         ]
     },

@@ -3,7 +3,7 @@ import styles from './Start.module.css'
 export const Start = () => {
     return (
         <div className={styles.container}>
-            qweqweqwe
+            Start Page
         </div>
     );
 };

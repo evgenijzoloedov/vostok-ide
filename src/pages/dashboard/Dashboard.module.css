@@ -5,3 +5,6 @@
     width: 100%;
     max-width: calc(100% - var(--logs--width) - var(--sidebar--width));
 }
+.title{
+    color:white
+}

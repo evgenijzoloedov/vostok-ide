@@ -10,8 +10,8 @@ export const App = () => {
         <MainLayout>
             <Routes>
                 <Route path={'/'} element={<Start/>}/>
-                <Route path={'/constructor'} element={<Constructor/>}/>
-                <Route path={'/dashboard'} element={<Dashboard/>}/>
+                <Route path={'/program/:id'} element={<Constructor/>}/>
+                <Route path={'/hometask/:id'} element={<Dashboard/>}/>
             </Routes>
         </MainLayout>
     );

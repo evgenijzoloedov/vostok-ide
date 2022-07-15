@@ -4,6 +4,7 @@ import {BlockWrapper} from "../wrappers/blockWrapper";
 import {Burger, Exit, Logo} from "../../assets/icons";
 import {Avatar} from "../UI/avatar";
 import cn from "classnames";
+import {Link} from "react-router-dom";
 
 function Side({children, className}) {
     return (
@@ -18,8 +19,10 @@ export const Header = () => {
         <header>
             <BlockWrapper className={styles.wrapper}>
                 <Side className={styles.left}>
-                    <Burger/>
-                    <Logo/>
+                    <Link to={'/'} className={cn(styles.left, styles.side)}>
+                        <Burger/>
+                        <Logo/>
+                    </Link>
                 </Side>
                 <Side className={styles.right}>
                     <Avatar/>

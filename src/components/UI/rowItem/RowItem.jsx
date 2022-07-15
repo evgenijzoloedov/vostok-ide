@@ -2,9 +2,10 @@ import React from 'react';
 import styles from './RowItem.module.css'
 import {BlockWrapper} from "../../wrappers/blockWrapper";
 import {Badge} from "../badge";
+import {Link} from "react-router-dom";
 
 
-function Badges ({badges}){
+function Badges({badges}) {
     return (
         <div className={styles.badgesWrapper}>
             {badges.map((badge, index) => <Badge
@@ -18,14 +19,21 @@ function Badges ({badges}){
 
 
 export const RowItem = ({
-                             item
+                            item
                         }) => {
     return (
         <BlockWrapper className={styles.wrapper}>
-            <div className={styles.rowWrapper}>
+
+            {item?.type === 'link' ? <Link className={styles.rowWrapper} to={item.to}>
+
                 <div className={styles.title}>{item.title}</div>
                 {item.badges && item?.badges.length && <Badges badges={item.badges}/>}
-            </div>
+            </Link> : <div className={styles.rowWrapper}>
+
+                <div className={styles.title}>{item.title}</div>
+                {item.badges && item?.badges.length && <Badges badges={item.badges}/>}
+            </div>}
+
         </BlockWrapper>
     );
 };
